@@ -1,0 +1,40 @@
+{
+  "name": "lightning-template",
+  "description": "fast web framework",
+  "private": true,
+  "author": "wolfx",
+  "version": "5.1.0",
+  "engines": {
+    "node": ">= 8.11.0"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "doc": "apidoc -i src/router -o public/apidoc",
+    "lint": "eslint src --ext .ts -f node_modules/eslint-html-reporter/reporter.js -o report.html"
+  },
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "dependencies": {
+    "@wolfx/lightning": "^5.2.2",
+    "art-template": "^4.13.2",
+    "axios": "^0.21.1",
+    "lodash": "^4.17.15",
+    "log4js": "^4.0.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "apidoc": "git+https://gitee.com/wolfx/apidoc-fork.git",
+    "eslint": "^7.3.0",
+    "eslint-config-alloy": "^3.7.3",
+    "eslint-html-reporter": "^0.7.4",
+    "prettier": "^1.16.4"
+  }
+}

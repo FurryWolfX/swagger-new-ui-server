@@ -1,0 +1,13 @@
+{
+  "name": "文档自动生成器",
+  "version": "1.0.0",
+  "description": "一个基于注释的文档生成器",
+  "title": "lightning-template API",
+  "url": "http://localhost:3001",
+  "sampleUrl": "http://localhost:3001",
+  "forceLanguage": "zh-cn",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
